@@ -4,72 +4,155 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
+
   <title>Frontend Mentor | Single Price Grid Component</title>
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="style.css">
 
-
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  <div class="container-fluid">
+  <header> <b>
+Join Our Community
 
-    <div class="row">
-      <div class="box-lg box-heading"> 
-        <!-- <div class="col-lg-12 box-heading"> -->
-        <h1> Join our community </h1>
+  </header></b>
 
-        <h3> 30-day, hassle-free money back guarantee </h3>
 
-        <p>Gain access to our full library of tutorials along with expert code reviews. 
-        Perfect for any developers who are serious about honing their skills. </p>
-      </div>
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+
+<style>
+
+  h3, p, header {
+    font-family: Karla;
+    font-size: 16px;
+  }
+
+  header {
+    color: #239593;
+  }
+
+  h3 {
+    color: #C0DF34;
+  }
+
+  P {
+    color: #888888
+  }
+
+button {
+  background-color: #C0DF34;
+  font-family: Karla;
+  color: white;
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px grey
+}
+
+
+body {
+  color: #fff;
+  font-color: #ffffff;
+  font-family: Karla;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: left;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Pattern styles */
+.container {
+  display: flex;
+  
+}
+
+.left-half {
+  background-color: #239593;
+  flex: 1;
+  padding: 1rem;
+
+}
+
+.right-half {
+  background-color: #b2d8d8;
+  flex: 1;
+  padding: 1rem;
+
+
+}
+
+
+
+#container {
+  
+  width: 50%;
+}
+
+  
+
+
+
+  </style>
+
+
+
+
+
+
+
+
+   <h3>
+        30-day, hassle-free money back guarantee
+   </h3>
+
+<p> Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.
+  </p>
+
+
+
+ <div class="box-md box-signup"> 
+     <section class="container">
+    <div class="left-half">
+        <h1 style="font-size: 16px;"> Monthly Subscription</h1>
+  <span style="vertical-align: text-bottom;color: white; font-size: 25px;"> £29 </span>
+        per month
+        
+        <h2 style="font-size: 16px;">Full access for less than £1 a display</h2>
+
+        <button type="button"> Sign Up </button>
+  
     </div>
+<div id="container">
+    <div class="right-half">
+    <box>
+        <h1 style="font-size: 16px;">Why Us</h1>
+        <p style="color: white;">Tutorials by indutry experts Peer & expert code review Coding exercises. Access to our Gitub repos Community forum Flashcard decks. New videos every week.</p>
 
-    <div class="row">
-      <div class="box-md box-signup"> 
-      <!-- <div class="col-lg-6 box-signup"> -->
-        <h3>Monthly Subscription</h3>
-
-        <p class="dollar-sign">&dollar;29 <span>per month</span></p>
-
-        <p>Full access for less than &dollar;1 a day </p>
-
-        <button class="btn">Sign Up</button> 
-      </div>
-      <div class="box-md box-whyus"> 
-      <!-- <div class="col-lg-6 box-signup"> -->
-        <h3>Why Us</h3>
-        <ul>
-          <li>Tutorials by industry experts</li>
-          <li>Peer &amp; expert code review</li>
-          <li>Coding exercises</li>
-          <li>Access to our GitHub repos</li>
-          <li>Community forum</li>
-          <li>Flashcard decks</li>
-          <li>New videos every week</li>
-        </ul>
-      </div>
+  </box>
+    
     </div>
-  </div>
+    </div>
+    </div>
+    
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">nonbinary-coder</a>.
-    </p>
-  </footer>
-</body>
-</html>
+  <p>
+    Challenge by <a href="https://www.frontendmentor.io/challenges">FrontendMentor</a>
+    Coded by <a href="https://github.com/folas18">Jessica Ukpebor</a>
+  </p>
+</footer>
