@@ -1,24 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-
-  <title>Frontend Mentor | Single Price Grid Component</title>
-
-</head>
-<body>
-
-  <header> <b>
-Join Our Community
-
-  </header></b>
-
-
-<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
 
 <style>
 
@@ -76,32 +57,45 @@ h1 {
 /* Pattern styles */
 .container {
   display: flex;
-  
+
+
 }
 
 .left-half {
   background-color: #239593;
   flex: 1;
   padding: 1rem;
+  border-radius: 0px 0px 0px 20px;
+  width: 275px;
 
 }
 
 .right-half {
   background-color: #b2d8d8;
   flex: 1;
-  padding: 1rem;
+  width: 255px;
+  padding: 1em;
+  border-radius: 0px 0px 20px 0px
 
 
 }
 
+.container1 {
+  padding: 0px;
+  width: 575px;
+  height: 450px;
+  border-radius:  20px 20px 20px 20px;
+  background-color: white;
+}
 
+.whole {
+
+}
 
 #container {
-  
+
   width: 50%;
 }
-
-  
 
 
 
@@ -114,6 +108,32 @@ h1 {
 
 
 
+
+<html lang="en">
+<div class= "container1">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+</head>
+<body>
+
+  <header> <b>
+Join Our Community
+
+  </header>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+
+
+
    <h3>
         30-day, hassle-free money back guarantee
    </h3>
@@ -123,17 +143,17 @@ h1 {
 
 
 
- <div class="box-md box-signup"> 
+ <div class="whole">
      <section class="container">
     <div class="left-half">
         <h1 style="font-size: 16px;"> Monthly Subscription</h1>
-  <span style="vertical-align: text-bottom;color: white; font-size: 25px;"> £29 </span>
-        per month
-        
-        <h2 style="font-size: 16px;">Full access for less than £1 a display</h2>
+  <span style="vertical-align: text-bottom;color: white; font-size: 25px;"> $29
+      <p style="font-size: 16px; color: white;"> per month </span>  
+
+        <h2 style="font-size: 16px;">Full access for less than $1 a display</h2>
 
         <button type="button"> Sign Up </button>
-  
+
     </div>
 <div id="container">
     <div class="right-half">
@@ -142,17 +162,18 @@ h1 {
         <p style="color: white;">Tutorials by indutry experts Peer & expert code review Coding exercises. Access to our Gitub repos Community forum Flashcard decks. New videos every week.</p>
 
   </box>
-    
+
     </div>
     </div>
     </div>
-    
+    <footer>
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io/challenges">FrontendMentor</a>
+      Coded by <a href="https://github.com/JessicaUkpebor">Jessica Ukpebor</a>
+    </p>
+  </footer>
+    </div>
 
 
 
-  <footer>
-  <p>
-    Challenge by <a href="https://www.frontendmentor.io/challenges">FrontendMentor</a>
-    Coded by <a href="https://github.com/folas18">Jessica Ukpebor</a>
-  </p>
-</footer>
+
